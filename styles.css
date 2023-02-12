@@ -1,0 +1,136 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+#activegame-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#player-turn {
+  color: rgb(224, 223, 135);
+}
+
+#board-container {
+  width: 225px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 75px;
+  height: 75px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  font-size: 3rem;
+  color: black;
+}
+
+#gamestatus {
+  color: violet;
+}
+
+#invalid-move {
+  color: red;
+}
+
+#note {
+  display: inline-block;
+  width: 350px;
+  color: rgb(0, 153, 255);
+}
+
+#startscreen-container,
+#note,
+#header,
+#whatisname-div,
+#choose-text,
+#XorO-h1,
+#hello {
+  text-align: center;
+}
+
+#header {
+  color: white;
+}
+
+#whatisname-header {
+  color: azure;
+}
+
+#name-label {
+  color: aliceblue;
+}
+
+#XorO-div {
+  display: none;
+}
+
+#choose-text {
+  color: white;
+}
+
+#XorO-h1,
+#header,
+#choose-text,
+#note,
+#gamestatus {
+  margin-block-end: 0;
+}
+
+#X {
+  background-color: red;
+  padding: 0px 9px 2px 7px;
+}
+
+#O {
+  background-color: blue;
+  padding: 0px 7px 2px 7px;
+}
+
+#O,
+#X {
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#X:hover {
+  background-color: rgba(255, 0, 0, 0.445);
+  color: white;
+}
+
+#O:hover {
+  background-color: rgba(0, 0, 255, 0.411);
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+#hello {
+  color: rgb(166, 101, 226);
+}
+
+#you-chose-mark {
+  color: beige;
+}
+
+#restart-btns-container,
+#start-button {
+  display: none;
+}
+
+#restart-round,
+#restart {
+  margin: 10px;
+}

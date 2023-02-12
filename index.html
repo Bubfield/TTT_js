@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="startscreen-container">
+      <h1 id="header">Tic Tac Toe</h1>
+      <h1 id="note">
+        Note: X makes the first move. You must select X or O, and put in your
+        name before you can start the game.
+      </h1>
+      <div id="whatisname-div">
+        <h1 id="whatisname-header">What is your name?</h1>
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" size="10" />
+        <button type="button" id="entername-btn">Enter</button>
+      </div>
+      <div id="XorO-div">
+        <h1 id="choose-text">Choose:</h1>
+        <h1 id="XorO-h1">
+          <span id="X">X</span>
+          <span id="O">O</span>
+        </h1>
+      </div>
+      <h1 id="hello"></h1>
+      <h1 id="you-chose-mark"></h1>
+      <button type="button" id="start-button">Start Game</button>
+    </div>
+    <div id="activegame-container">
+      <h1 id="player-turn"></h1>
+      <div id="board-container"></div>
+      <h1 id="gamestatus"></h1>
+      <h1 id="invalid-move"></h1>
+      <div id="restart-btns-container">
+        <button type="button" id="restart-round">Restart Round</button>
+        <button type="button" id="restart">Restart App</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
