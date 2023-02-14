@@ -37,9 +37,9 @@ function checkForWin() {
   );
 }
 
-/*this function deals not only with the user making making
-their move on click, but also covers the computer making its move as well
-based on the if statement of activePlayer.name === "The Computer"*/
+/*this function deals not only with the user making their move on click, 
+but also covers the computer making its move as well based 
+on the if statement of activePlayer.name === "The Computer"*/
 function executeMove(square) {
   if (!board[square]) {
     board[square] = activePlayer.mark;
@@ -87,7 +87,7 @@ function setMarks(mark) {
 }
 
 //this function determines if the computer should make the first move
-function doesAIMakeFirstMove() {
+function checkAIMakeFirstMove() {
   if (activePlayer.name === "The Computer") {
     let randomIndex = Math.floor(Math.random() * openSquares.length);
     setTimeout(() => {
@@ -216,7 +216,7 @@ startBtn.addEventListener("click", () => {
   updateActivePlayer();
   updateBoardFromState();
   updateGameStatus();
-  doesAIMakeFirstMove();
+  checkAIMakeFirstMove();
   setTimeout(() => {
     updateStateAfterMove();
   }, 2000);
@@ -228,7 +228,7 @@ restartRnd.addEventListener("click", () => {
   updateBoardFromState();
   updateGameStatus();
   restartBtnsContainer.style.display = "none";
-  doesAIMakeFirstMove();
+  checkAIMakeFirstMove();
   setTimeout(() => {
     updateStateAfterMove();
   }, 2000);
